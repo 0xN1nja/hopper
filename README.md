@@ -2,6 +2,8 @@
 
 A lightweight self-hosted RCON webUI for game servers.
 
+<img width="1470" height="471" alt="Hopper preview" src="https://github.com/user-attachments/assets/98586af1-fb22-4f01-9e0e-c0cf4e2d3149" />
+
 ## Quick Start
 
 ```yaml
