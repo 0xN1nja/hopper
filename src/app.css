@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+	--font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background-color: theme('colors.zinc.50');
+	color: theme('colors.zinc.900');
+	font-family: var(--font-sans);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
+::selection {
+	background: theme('colors.blue.100');
+	color: theme('colors.blue.900');
+}
+
+.terminal-font {
+	font-family: var(--font-mono);
+	font-size: 13px;
+	line-height: 1.6;
+}

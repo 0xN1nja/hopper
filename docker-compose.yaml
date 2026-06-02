@@ -1,0 +1,17 @@
+services:
+  hopper:
+    image: ghcr.io/0xn1nja/hopper:latest
+    container_name: hopper
+    # Uncomment the line below to build Dockerfile locally
+    # build: .
+    restart: unless-stopped
+    ports:
+      - '8080:8080'
+    volumes:
+      - hopper-data:/data
+    environment:
+      - USERNAME=admin
+      - PASSWORD=changeme
+
+volumes:
+  hopper-data:
